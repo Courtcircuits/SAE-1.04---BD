@@ -30,7 +30,7 @@ WHERE idClient IN(
     MINUS
     SELECT idClient FROM Commande
 )
-/*Les infos sur les clients 5,6 & 7*/
+/*Retourne les infos sur les clients 5,6 & 7*/
 
 /*Renvoie l'idProduit et sa quantité des produits dont le prix est superieur a 100 du plus chère au moins chère */
 SELECT quantite , idProduit
@@ -38,4 +38,21 @@ FROM SeTrouver s
 JOIN Produit p ON p.idProduit=s.idProduit
 WHERE prixProduit > 100
 ORDER BY DESC;
+
+/*Récupère le nom des clients qui sont des professionnels de la musique et les clients ayant acheté un instrument dans la catégorie guitare*/
+SELECT nomClient FROM Client
+WHERE idClient IN(
+    SELECT idClient FROM CategorieClient
+    WHERE nomCategorieClient=' Musicien professionel'
+    UNION
+    SELECT idClient FROM Commande
+    WHERE idCommande IN(
+        SELECT idProduit FROM Produit
+        WHERE identifiantCategorie IN(
+            SELECT identifiantCategorie FROM CategorieProduit
+            WHERE nomCategorie='Guitare'
+        )
+    )
+)
+/*Retourne Bigard*/
 
