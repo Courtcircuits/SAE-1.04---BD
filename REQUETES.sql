@@ -75,3 +75,11 @@ GROUP BY idClient;
 SELECT AVG(prixCommande) AS prixMoyen
 FROM Commande;
 /*41,167*/
+
+/* Retourne le nombre de clients habitant dans chaque département */
+SELECT nomDepartement, COUNT(*) AS nbHabitants
+FROM Departement d
+JOIN Ville v ON d.identifiantDepartement = v.identifiantDepartement
+JOIN Client c ON v.identifiantVille = c.idVilleResidence
+GROUP BY nomDepartement;
+/* (Hérault,10) (Gard,1)*/
