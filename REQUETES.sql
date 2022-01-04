@@ -71,3 +71,7 @@ SELECT idClient, COUNT(idCommande) AS NBCOMMANDES
 FROM Commande 
 GROUP BY idClient;
 
+/*Retourne le prix moyen des commandes */
+SELECT AVG(prixCommande) AS prixMoyen
+FROM Commande;
+/*41,167*/
