@@ -52,6 +52,7 @@ FROM SeTrouver s
 JOIN Produit p ON p.idProduit=s.idProduit
 WHERE prixProduit > 100
 ORDER BY prixProduit DESC;
+/* Retourne (6,9),(1,5),(1,3),(2,2),(1,2),(3,1),(2,8),(7,7) */
 
 /*Récupère le nom des clients qui sont des VIP mais également qui ont acheté un instrument dans la catégorie guitare*/
 SELECT nomClient FROM Client
