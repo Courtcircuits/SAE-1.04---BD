@@ -83,3 +83,25 @@ JOIN Ville v ON d.identifiantDepartement = v.identifiantDepartement
 JOIN Client c ON v.identifiantVille = c.idVilleResidence
 GROUP BY nomDepartement;
 /* (Hérault,10) (Gard,1)*/
+
+/*La date de naissance des clients qui habitent à Montpellier et les clients qui ont acheté le produit le plus cher*/
+SELECT dateDeNaissance FROM Client
+WHERE idClient IN(
+    SELECT idClient FROM Commande
+    WHERE idCommande IN(
+        SELECT idCommande FROM SeTrouver
+        WHERE idProduit IN(
+            SELECT idProduit FROM Produit
+            WHERE prixProduit IN(
+                SELECT MAX(prixProduit) FROM Produit
+            )
+        )
+    )
+    UNION
+    SELECT idClient FROM Client
+    WHERE idVilleNaissance IN(
+        SELECT identifiantVille FROM Ville
+        WHERE nomVille='Montpellier'
+    )
+)
+/*Renvoie 11/08/02 & 13/08/58*/
