@@ -74,6 +74,7 @@ WHERE idClient IN(
 SELECT idVilleResidence, COUNT(idClient) AS NBCLIENT
 FROM Client
 GROUP BY idVilleResidence;
+/*renvoie (1,2);(2,1);(4,2);(8,1);(3,1);(7,1);(10,1);(9,1)*/
 
 /*Pour chaque département (qui possède des villes), on indique l'identifiant du département ainsi que le nombre de ville du département.*/
 SELECT identifiantDepartement, COUNT(identifiantVille) AS NBVILLE
