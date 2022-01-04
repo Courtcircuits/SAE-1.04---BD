@@ -57,3 +57,15 @@ INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepar
 INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (08, 'Mauguio', 16705, 34);
 INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (09, 'Palavas-les-Flots', 5844, 34);
 INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (10, 'Castelnau-le-Lez', 22534, 34);
+
+/*Produit*/
+INSERT INTO Produit (idProduit, libelle, prixProduit, identifiantCategorie) VALUES (0, 'Thomann C-402 NT Set', 89, 1);
+INSERT INTO Produit (idProduit, libelle, prixProduit, identifiantCategorie) VALUES (1, 'Gewa Pro Natura Silver 1/2 Maple', 148, 1);
+INSERT INTO Produit (idProduit, libelle, prixProduit, identifiantCategorie) VALUES (2, 'Millenium Focus Junior Drum Set Black', 158, 8);
+INSERT INTO Produit (idProduit, libelle, prixProduit, identifiantCategorie) VALUES (3, 'Millenium Focus Junior Drum Set Black', 160, 8);
+INSERT INTO Produit (idProduit, libelle, prixProduit, identifiantCategorie) VALUES (4, 'TIGER MAR56-NT Maracas à  bois Naturel', 14.99, 7);
+INSERT INTO Produit (idProduit, libelle, prixProduit, identifiantCategorie) VALUES (5, 'Millenium Hybrid Practice Drum Set BL', 499, 8);
+INSERT INTO Produit (idProduit, libelle, prixProduit, identifiantCategorie) VALUES (6, 'Eastar Captain Blues Harmonica ', 12.27, 6);
+INSERT INTO Produit (idProduit, libelle, prixProduit, identifiantCategorie) VALUES (7, 'Stentor Classic Violinset', 109, 2);
+INSERT INTO Produit (idProduit, libelle, prixProduit, identifiantCategorie) VALUES (8, 'Classic Cantabile FL-100 flûte traversière', 122.10, 4);
+INSERT INTO Produit (idProduit, libelle, prixProduit, identifiantCategorie) VALUES (9, 'Yamaha YAS-62 04 Alto Sax', 2555, 5);
