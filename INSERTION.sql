@@ -46,3 +46,14 @@ INSERT INTO Fournisseur VALUES (8, 'Bet Hoven');
 INSERT INTO Fournisseur VALUES (9, 'Tronc et Bonne');
 INSERT INTO Fournisseur VALUES (10, 'La Ré du Do');
 
+/*Ville*/
+INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (01, 'Sète', 91276, 34);
+INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (02, 'Montpellier',440896, 34);
+INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (03, 'Béziers', 75999, 34);
+INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (04, 'Agde', 29600, 34);
+INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (05, 'Pézenas', 8156, 34);
+INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (06, 'Lunel', 25178, 34);
+INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (07, 'Marseillan', 7808, 34);
+INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (08, 'Mauguio', 16705, 34);
+INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (09, 'Palavas-les-Flots', 5844, 34);
+INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (10, 'Castelnau-le-Lez', 22534, 34);
