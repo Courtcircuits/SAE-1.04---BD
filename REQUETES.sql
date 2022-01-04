@@ -25,6 +25,7 @@ SELECT idProduit, identifiantPromotion
 FROM Reduire
 Where pourcentage >= 35
 Order by pourcentage;
+/* Retourne (3,2),(4,8),(8,5),(1,4) */
 
 /* Retourne les id distinctes des commandes qui contiennent des produits appartenant à la catégorie Batterie */
 SELECT DISTINCT idCommande 
@@ -34,6 +35,7 @@ WHERE idProduit IN (SELECT idProduit
 					WHERE identifiantCategorie IN (SELECT identifiantCategorie
 													FROM categorieProduit
 													WHERE nomCategorie = 'Batterie'));
+/* Retourne 1, 2, 10 */
                          
 /*Récupère toutes les infos sur les clients qui n'ont passé aucune commande*/
 SELECT * FROM Client
