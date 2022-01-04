@@ -105,3 +105,15 @@ INSERT INTO Reduire VALUES (5,8,42);
 INSERT INTO Reduire VALUES (7,3,5);
 INSERT INTO Reduire VALUES (9,9,22);
 INSERT INTO Reduire VALUES (8,4,37);
+
+/*Client*/
+INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (01, 'Bigard', 'Jean-Marie', 0669696969, 'jdefouraille@gmail.com', '17/05/1954', 03, 04, 8);
+INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (02, 'Kujo', 'Dylan', 0765432198, 'nouvautouit.insane@gmail.com', '26/10/2000', 01, 01, 4);
+INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (03, 'Pichon', 'Bernard', 0654321987, 'bernard.pichon34@gmail.com', '06/09/1969', 05, 10, 3);
+INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (04, 'Honnet', 'Andréas', 0778797978, 'sardoche.maiscetaitsurenfait@gmail.com', '28/06/1993', 09, 09, 1);
+INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (05, 'Bricot', 'Judas', 0677889911, 'judas.bricot@gmail.com', '10/09/2003', 06, 01, 2);
+INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (06, 'Nanas', 'Judas', 0655443322, 'judas.nanas@gmail.com', '11/08/2002', 02, 03, 7);
+INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (07, 'Dupont', 'Pierre', 0796327584, 'pierre.dupoont@gmail.com', '15/03/1975', 09, 07, 10);
+INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (08, 'Hello', 'World', 0640440440, 'helloworld@gmail.com', '06/08/1991', 04, 04, 4);
+INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (09, 'Zemmour', 'Éric', 0666666666, 'ZemmourPresident.2022@gmail.com', '31/08/1958', 08, 02, 8);
+INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (10, 'Zemmour', 'Éric', 0666666660, 'VotezZemmour.2022@gmail.com', '13/08/1958', 02, 08, 2);
