@@ -21,3 +21,15 @@ INSERT INTO Departement(identifiantDepartement, nomDepartement, nomRegion) VALUE
 INSERT INTO Departement(identifiantDepartement, nomDepartement, nomRegion) VALUES (46, 'Lot', 'Occitanie');
 INSERT INTO Departement(identifiantDepartement, nomDepartement, nomRegion) VALUES (81, 'Tarn', 'Occitanie');
 INSERT INTO Departement(identifiantDepartement, nomDepartement, nomRegion) VALUES (48, 'Lozère', 'Occitanie');
+
+/*Catégorie Produit*/
+INSERT INTO CategorieProduit (identifiantCategorie, nomCategorie) VALUES (0, 'Piano');
+INSERT INTO CategorieProduit (identifiantCategorie, nomCategorie) VALUES (1, 'Guitare');
+INSERT INTO CategorieProduit (identifiantCategorie, nomCategorie) VALUES (2, 'Violon');
+INSERT INTO CategorieProduit (identifiantCategorie, nomCategorie) VALUES (3, 'Trompette');
+INSERT INTO CategorieProduit (identifiantCategorie, nomCategorie) VALUES (4, 'Flûte');
+INSERT INTO CategorieProduit (identifiantCategorie, nomCategorie) VALUES (5, 'Saxophone');
+INSERT INTO CategorieProduit (identifiantCategorie, nomCategorie) VALUES (6, 'Harmonica');
+INSERT INTO CategorieProduit (identifiantCategorie, nomCategorie) VALUES (7, 'Maracas');
+INSERT INTO CategorieProduit (identifiantCategorie, nomCategorie) VALUES (8, 'Batterie');
+INSERT INTO CategorieProduit (identifiantCategorie, nomCategorie) VALUES (9, 'Harpe');
