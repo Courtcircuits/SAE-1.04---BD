@@ -57,6 +57,7 @@ INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepar
 INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (08, 'Mauguio', 16705, 34);
 INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (09, 'Palavas-les-Flots', 5844, 34);
 INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (10, 'Castelnau-le-Lez', 22534, 34);
+INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (11, 'Nîmes', 150672, 30);
 
 /*Produit*/
 INSERT INTO Produit (idProduit, libelle, prixProduit, identifiantCategorie) VALUES (0, 'Thomann C-402 NT Set', 89, 1);
