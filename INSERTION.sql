@@ -69,3 +69,16 @@ INSERT INTO Produit (idProduit, libelle, prixProduit, identifiantCategorie) VALU
 INSERT INTO Produit (idProduit, libelle, prixProduit, identifiantCategorie) VALUES (7, 'Stentor Classic Violinset', 109, 2);
 INSERT INTO Produit (idProduit, libelle, prixProduit, identifiantCategorie) VALUES (8, 'Classic Cantabile FL-100 flûte traversière', 122.10, 4);
 INSERT INTO Produit (idProduit, libelle, prixProduit, identifiantCategorie) VALUES (9, 'Yamaha YAS-62 04 Alto Sax', 2555, 5);
+
+/*Promotion*/
+
+INSERT INTO Promotion(identifiantPromotion, nomPromotion, dateDebut, dateFin) VALUES (1, 'Black Friday', '25/11/2021', '29/11/2021');
+INSERT INTO Promotion(identifiantPromotion, nomPromotion, dateDebut, dateFin) VALUES (2, 'Noël', '17/12/2021', '25/12/2021');
+INSERT INTO Promotion(identifiantPromotion, nomPromotion, dateDebut, dateFin) VALUES (3, 'Hot Deals', '31/1/2022', '10/3/2022');
+INSERT INTO Promotion(identifiantPromotion, nomPromotion, dateDebut, dateFin) VALUES (4, 'Anniversaire de Banger Shop', '15/3/2022', '16/3/2022');
+INSERT INTO Promotion(identifiantPromotion, nomPromotion, dateDebut, dateFin) VALUES (5, 'Soldes d''hiver', '12/1/2022', '8/2/2022');
+INSERT INTO Promotion(identifiantPromotion, nomPromotion, dateDebut, dateFin) VALUES (6, 'Solde d''été', '22/06/2022', '19/07/2022');
+INSERT INTO Promotion(identifiantPromotion, nomPromotion, dateDebut, dateFin) VALUES (7, 'Black Friday', '25/11/2022', '29/11/2022');
+INSERT INTO Promotion(identifiantPromotion, nomPromotion, dateDebut, dateFin) VALUES (8, 'Black Friday', '25/11/2023', '29/11/2023');
+INSERT INTO Promotion(identifiantPromotion, nomPromotion, dateDebut, dateFin) VALUES (9, 'Noël', '17/12/2022', '25/12/2022');
+INSERT INTO Promotion(identifiantPromotion, nomPromotion, dateDebut, dateFin) VALUES (10, 'Anniversaire de Banger Shop', '15/3/2023', '16/3/2023');
