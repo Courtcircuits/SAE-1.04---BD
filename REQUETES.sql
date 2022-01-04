@@ -43,7 +43,7 @@ WHERE idClient IN(
     SELECT idClient FROM Client
     MINUS
     SELECT idClient FROM Commande
-)
+);
 /*Retourne les infos sur les clients 5,6 & 7*/
 
 /*Renvoie l'idProduit et sa quantité des produits dont le prix est superieur a 100 du plus chère au moins chère */
@@ -68,7 +68,7 @@ WHERE idClient IN(
             WHERE nomCategorie='Guitare'
         )
     )
-)
+);
 /*Retourne Bigard*/
 
 /*Pour chaque ville de résidence (qui possède des clients), on indique l'identifiant de la ville de résidence ainsi que le nombre de clients de la ville.*/
@@ -121,7 +121,7 @@ WHERE idClient IN(
         SELECT identifiantVille FROM Ville
         WHERE nomVille='Montpellier'
     )
-)
+);
 /*Renvoie 11/08/02 & 13/08/58*/
 
 /*Retourne l'identifiant et le nom de des promotions ayant le pourcentage de réduction le plus bas */
