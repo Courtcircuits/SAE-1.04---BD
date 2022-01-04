@@ -35,7 +35,7 @@ INSERT INTO CategorieProduit (identifiantCategorie, nomCategorie) VALUES (8, 'Ba
 INSERT INTO CategorieProduit (identifiantCategorie, nomCategorie) VALUES (9, 'Harpe');
 
 /*Fournisseur*/
-INSERT INTO Fournisseur VALUES (1, 'LeFilsDarianne');
+INSERT INTO Fournisseur VALUES (1, 'LeFilDarianne');
 INSERT INTO Fournisseur VALUES (2, 'LaBelleTouche');
 INSERT INTO Fournisseur VALUES (3, 'Basse inné');
 INSERT INTO Fournisseur VALUES (4, 'fauré');
