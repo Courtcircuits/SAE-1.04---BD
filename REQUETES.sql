@@ -31,3 +31,11 @@ WHERE idClient IN(
     SELECT idClient FROM Commande
 )
 /*Les infos sur les clients 5,6 & 7*/
+
+/*Renvoie l'idProduit et sa quantité des produits dont le prix est superieur a 100 du plus chère au moins chère */
+SELECT quantite , idProduit
+FROM SeTrouver s
+JOIN Produit p ON p.idProduit=s.idProduit
+WHERE prixProduit > 100
+ORDER BY DESC;
+
