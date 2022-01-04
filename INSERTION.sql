@@ -71,7 +71,6 @@ INSERT INTO Produit (idProduit, libelle, prixProduit, identifiantCategorie) VALU
 INSERT INTO Produit (idProduit, libelle, prixProduit, identifiantCategorie) VALUES (9, 'Yamaha YAS-62 04 Alto Sax', 2555, 5);
 
 /*Promotion*/
-
 INSERT INTO Promotion(identifiantPromotion, nomPromotion, dateDebut, dateFin) VALUES (1, 'Black Friday', '25/11/2021', '29/11/2021');
 INSERT INTO Promotion(identifiantPromotion, nomPromotion, dateDebut, dateFin) VALUES (2, 'Noël', '17/12/2021', '25/12/2021');
 INSERT INTO Promotion(identifiantPromotion, nomPromotion, dateDebut, dateFin) VALUES (3, 'Hot Deals', '31/1/2022', '10/3/2022');
@@ -94,6 +93,7 @@ INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (5,6);
 INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (6,8);
 INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (7,5);
 INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (8,3);
+
 /*Reduire*/
 INSERT INTO Reduire VALUES (4,0,10);
 INSERT INTO Reduire VALUES (4,1,50);
@@ -129,3 +129,16 @@ INSERT INTO Commande(idCommande, dateCommande, dateLivraison, prixCommande, idVi
 INSERT INTO Commande(idCommande, dateCommande, dateLivraison, prixCommande, idVilleReception, idClient) VALUES(8, '1/4/2019', '1/5/2019', 42.99, 08, 10);
 INSERT INTO Commande(idCommande, dateCommande, dateLivraison, prixCommande, idVilleReception, idClient) VALUES(9, '20/5/2019', '27/5/2019', 23.00, 09, 08);
 INSERT INTO Commande(idCommande, dateCommande, dateLivraison, prixCommande, idVilleReception, idClient) VALUES(10, '23/6/2019', '27/6/2019', 51.90, 10, 02);
+
+/* SeTrouver */
+INSERT INTO SeTrouver (idCommande, idProduit, quantite) VALUES (1,3,1);
+INSERT INTO SeTrouver (idCommande, idProduit, quantite) VALUES (1,2,2);
+INSERT INTO SeTrouver (idCommande, idProduit, quantite) VALUES (2,2,1);
+INSERT INTO SeTrouver (idCommande, idProduit, quantite) VALUES (3,1,3);
+INSERT INTO SeTrouver (idCommande, idProduit, quantite) VALUES (4,4,2);
+INSERT INTO SeTrouver (idCommande, idProduit, quantite) VALUES (5,0,4);
+INSERT INTO SeTrouver (idCommande, idProduit, quantite) VALUES (6,9,6);
+INSERT INTO SeTrouver (idCommande, idProduit, quantite) VALUES (7,8,2);
+INSERT INTO SeTrouver (idCommande, idProduit, quantite) VALUES (8,7,7);
+INSERT INTO SeTrouver (idCommande, idProduit, quantite) VALUES (9,6,2);
+INSERT INTO SeTrouver (idCommande, idProduit, quantite) VALUES (10,5,1);
