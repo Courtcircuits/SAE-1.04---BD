@@ -15,14 +15,15 @@ CREATE TABLE Departement (
 CREATE TABLE CategorieProduit
 (identifiantCategorie NUMBER(5,0), nomCategorie VARCHAR(50),
 constraint pk_CategorieProduit PRIMARY KEY (identifiantCategorie),
-constraint nn_nom_CategorieProduit CHECK (nomCategorie IS NOT NULL));
+constraint nn_nom_CategorieProduit CHECK (nomCategorie IS NOT NULL),
+CONSTRAINT un_nom_CategorieProduit UNIQUE (nomCategorie);
 
 CREATE TABLE CategorieClient (
     identifiantCategorieClient NUMBER(5,0),
     nomCategorieClient VARCHAR(50),
     CONSTRAINT nn_nom_CategorieClient CHECK (nomCategorieClient IS NOT NULL),
     CONSTRAINT pk_CategorieClient PRIMARY KEY (identifiantCategorieClient),
-    CONSTRAINT ck_nom_CategorieClient CHECK (nomCategorieClient = 'fidèle' OR nomCategorieClient = 'classique')
+    CONSTRAINT un_nom_CategorieClient UNIQUE (nomCategorieClient)
 );
 
 CREATE TABLE Ville
