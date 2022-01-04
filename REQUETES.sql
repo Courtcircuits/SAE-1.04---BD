@@ -23,3 +23,11 @@ WHERE idProduit IN (SELECT idProduit
 													FROM categorieProduit
 													WHERE nomCategorie = 'Batterie'));
                          
+/*Récupère toutes les infos sur les clients qui n'ont passé aucune commande*/
+SELECT * FROM Client
+WHERE idClient IN(
+    SELECT idClient FROM Client
+    MINUS
+    SELECT idClient FROM Commande
+)
+/*Les infos sur les clients 5,6 & 7*/
