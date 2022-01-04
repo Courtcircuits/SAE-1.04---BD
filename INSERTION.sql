@@ -82,3 +82,15 @@ INSERT INTO Promotion(identifiantPromotion, nomPromotion, dateDebut, dateFin) VA
 INSERT INTO Promotion(identifiantPromotion, nomPromotion, dateDebut, dateFin) VALUES (8, 'Black Friday', '25/11/2023', '29/11/2023');
 INSERT INTO Promotion(identifiantPromotion, nomPromotion, dateDebut, dateFin) VALUES (9, 'Noël', '17/12/2022', '25/12/2022');
 INSERT INTO Promotion(identifiantPromotion, nomPromotion, dateDebut, dateFin) VALUES (10, 'Anniversaire de Banger Shop', '15/3/2023', '16/3/2023');
+
+/* Fournir */
+INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (0,1);
+INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (0,2);
+INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (3,2);
+INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (4,9);
+INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (1,10);
+INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (2,4);
+INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (5,6);
+INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (6,8);
+INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (7,5);
+INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (8,3);
