@@ -7,8 +7,19 @@ SELECT nomFournisseur
 FROM Fournisseur
 where identifiantFournisseur IN (SELECT identifiantFournisseur
                                  FROM Fournir);
+                                 
 /*Récuperer l'id produit et l'identifiant de promotion pour les pourcentage de reduction superieur ou egal a 35*/
 SELECT idProduit, identifiantPromotion
 FROM Reduire
 Where pourcentage >= 35
 Order by pourcentage;
+
+/* Retourne les id distinctes des commandes qui contiennent des produits appartenant à la catégorie Batterie */
+SELECT DISTINCT idCommande 
+FROM SeTrouver
+WHERE idProduit IN (SELECT idProduit
+					FROM Produit
+					WHERE identifiantCategorie IN (SELECT identifiantCategorie
+													FROM categorieProduit
+													WHERE nomCategorie = 'Batterie'));
+                         
