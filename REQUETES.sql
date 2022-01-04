@@ -1,12 +1,24 @@
 /*Récupère la somme des prix des commandes passées par le client 10*/
 SELECT SUM(prixCommande) FROM Commande 
 WHERE idClient=10;
+/*Retourne 46.98 */
 
 /*Renvoie tout les noms de fournisseur qui fournisse un produit*/
 SELECT nomFournisseur
 FROM Fournisseur
 where identifiantFournisseur IN (SELECT identifiantFournisseur
                                  FROM Fournir);
+/* Retourne 
+LeFilDarianne
+LaBelleTouche
+La Ré du Do
+fauré
+Tronc et Bonne
+Le DoRé
+Bet Hoven
+un bon Grieg et au liszt
+Basse inné 
+*/
                                  
 /*Récuperer l'id produit et l'identifiant de promotion pour les pourcentage de reduction superieur ou egal a 35*/
 SELECT idProduit, identifiantPromotion
