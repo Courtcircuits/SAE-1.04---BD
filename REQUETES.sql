@@ -47,11 +47,11 @@ WHERE idClient IN(
 /*Retourne les infos sur les clients 5,6 & 7*/
 
 /*Renvoie l'idProduit et sa quantité des produits dont le prix est superieur a 100 du plus chère au moins chère */
-SELECT quantite , idProduit
+SELECT quantite , p.idProduit
 FROM SeTrouver s
 JOIN Produit p ON p.idProduit=s.idProduit
 WHERE prixProduit > 100
-ORDER BY DESC;
+ORDER BY prixProduit DESC;
 
 /*Récupère le nom des clients qui sont des VIP mais également qui ont acheté un instrument dans la catégorie guitare*/
 SELECT nomClient FROM Client
