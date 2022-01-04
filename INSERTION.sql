@@ -21,3 +21,5 @@ INSERT INTO Departement(identifiantDepartement, nomDepartement, nomRegion) VALUE
 INSERT INTO Departement(identifiantDepartement, nomDepartement, nomRegion) VALUES (46, 'Lot', 'Occitanie');
 INSERT INTO Departement(identifiantDepartement, nomDepartement, nomRegion) VALUES (81, 'Tarn', 'Occitanie');
 INSERT INTO Departement(identifiantDepartement, nomDepartement, nomRegion) VALUES (48, 'Lozère', 'Occitanie');
+
+BONJOUR JULIE
