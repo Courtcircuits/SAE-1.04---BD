@@ -56,3 +56,18 @@ WHERE idClient IN(
 )
 /*Retourne Bigard*/
 
+/*Pour chaque ville de résidence (qui possède des clients), on indique l'identifiant de la ville de résidence ainsi que le nombre de clients de la ville.*/
+SELECT idVilleResidence, COUNT(idClient) AS NBCLIENT
+FROM Client
+GROUP BY idVilleResidence;
+
+/*Pour chaque département (qui possède des villes), on indique l'identifiant du département ainsi que le nombre de ville du département.*/
+SELECT identifiantDepartement, COUNT(identifiantVille) AS NBVILLE
+FROM Ville
+GROUP BY identifiantDepartement;
+
+/*Pour chaque client, on indique le code du client ainsi que le nombre de commande passé*/
+SELECT idClient, COUNT(idCommande) AS NBCOMMANDES
+FROM Commande 
+GROUP BY idClient;
+
