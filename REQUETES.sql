@@ -82,6 +82,7 @@ GROUP BY identifiantDepartement;
 SELECT idClient, COUNT(idCommande) AS NBCOMMANDES
 FROM Commande 
 GROUP BY idClient;
+/*renvoie (1,2);(2,2);(4,1);(8,1);(3,1);(10,2)(9,1)*/
 
 /*Retourne le prix moyen des commandes */
 SELECT AVG(prixCommande) AS prixMoyen
