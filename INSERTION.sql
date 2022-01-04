@@ -94,3 +94,14 @@ INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (5,6);
 INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (6,8);
 INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (7,5);
 INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (8,3);
+/*Reduire*/
+INSERT INTO Reduire VALUES (4,0,10);
+INSERT INTO Reduire VALUES (4,1,50);
+INSERT INTO Reduire VALUES (1,0,30);
+INSERT INTO Reduire VALUES (1,1,15);
+INSERT INTO Reduire VALUES (2,1,25);
+INSERT INTO Reduire VALUES (2,3,35);
+INSERT INTO Reduire VALUES (5,8,42);
+INSERT INTO Reduire VALUES (7,3,5);
+INSERT INTO Reduire VALUES (9,9,22);
+INSERT INTO Reduire VALUES (8,4,37);
