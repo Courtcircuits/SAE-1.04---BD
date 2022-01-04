@@ -105,3 +105,11 @@ WHERE idClient IN(
     )
 )
 /*Renvoie 11/08/02 & 13/08/58*/
+
+/*Retourne l'identifiant et le nom de des promotions ayant le pourcentage de réduction le plus bas */
+SELECT p.identifiantPromotion , nomPromotion
+FROM Promotion p
+JOIN Reduire r ON p.identifiantPromotion = r.identifiantPromotion
+WHERE pourcentage IN (SELECT MIN(pourcentage)
+			FROM Reduire);
+/*Retourne (7, Black Friday)*/
