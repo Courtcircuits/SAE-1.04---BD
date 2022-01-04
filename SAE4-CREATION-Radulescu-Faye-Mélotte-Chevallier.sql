@@ -96,7 +96,7 @@ CONSTRAINT nn_nomPromotion_Promotion CHECK (nomPromotion IS NOT NULL));
 CREATE TABLE Reduire (
     identifiantPromotion NUMBER(5,0),
     idProduit NUMBER(5,0),
-    pourcentage NUMBER(2,2),
+    pourcentage NUMBER(2,0),
     CONSTRAINT nn_pourcentage_Reduire CHECK (pourcentage IS NOT NULL),
     CONSTRAINT pk_Reduire PRIMARY KEY (identifiantPromotion, idProduit),
     CONSTRAINT fk_idPromotion_Reduire FOREIGN KEY (identifiantPromotion) REFERENCES Promotion(identifiantPromotion),
