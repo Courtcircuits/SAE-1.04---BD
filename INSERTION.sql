@@ -117,3 +117,15 @@ INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, da
 INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (08, 'Hello', 'World', 0640440440, 'helloworld@gmail.com', '06/08/1991', 04, 04, 4);
 INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (09, 'Zemmour', 'Éric', 0666666666, 'ZemmourPresident.2022@gmail.com', '31/08/1958', 08, 02, 8);
 INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (10, 'Zemmour', 'Éric', 0666666660, 'VotezZemmour.2022@gmail.com', '13/08/1958', 02, 08, 2);
+
+/*Commande*/
+INSERT INTO Commande(idCommande, dateCommande, dateLivraison, prixCommande, idVilleReception, idClient) VALUES(1, '23/1/2019', '27/1/2019', 99.99, 03, 01);
+INSERT INTO Commande(idCommande, dateCommande, dateLivraison, prixCommande, idVilleReception, idClient) VALUES(2, '2/2/2019', '5/2/2019', 12.82, 01, 01);
+INSERT INTO Commande(idCommande, dateCommande, dateLivraison, prixCommande, idVilleReception, idClient) VALUES(3, '25/2/2019', '27/2/2019', 99.99, 01, 02);
+INSERT INTO Commande(idCommande, dateCommande, dateLivraison, prixCommande, idVilleReception, idClient) VALUES(4, '2/3/2019', '5/3/2019', 43.00, 04, 04);
+INSERT INTO Commande(idCommande, dateCommande, dateLivraison, prixCommande, idVilleReception, idClient) VALUES(5, '10/3/2019', '15/3/2019', 21.99, 07, 03);
+INSERT INTO Commande(idCommande, dateCommande, dateLivraison, prixCommande, idVilleReception, idClient) VALUES(6, '17/3/2019', '20/3/2019', 3.99, 06, 10);
+INSERT INTO Commande(idCommande, dateCommande, dateLivraison, prixCommande, idVilleReception, idClient) VALUES(7, '23/3/2019', '25/3/2019', 12.00, 03, 09);
+INSERT INTO Commande(idCommande, dateCommande, dateLivraison, prixCommande, idVilleReception, idClient) VALUES(8, '1/4/2019', '1/5/2019', 42.99, 08, 10);
+INSERT INTO Commande(idCommande, dateCommande, dateLivraison, prixCommande, idVilleReception, idClient) VALUES(9, '20/5/2019', '27/5/2019', 23.00, 09, 08);
+INSERT INTO Commande(idCommande, dateCommande, dateLivraison, prixCommande, idVilleReception, idClient) VALUES(10, '23/6/2019', '27/6/2019', 51.90, 10, 02);
