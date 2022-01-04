@@ -39,12 +39,12 @@ JOIN Produit p ON p.idProduit=s.idProduit
 WHERE prixProduit > 100
 ORDER BY DESC;
 
-/*Récupère le nom des clients qui sont des professionnels de la musique et les clients ayant acheté un instrument dans la catégorie guitare*/
+/*Récupère le nom des clients qui sont des VIP mais également qui ont acheté un instrument dans la catégorie guitare*/
 SELECT nomClient FROM Client
 WHERE idClient IN(
     SELECT idClient FROM CategorieClient
-    WHERE nomCategorieClient=' Musicien professionel'
-    UNION
+    WHERE nomCategorieClient='VIP'
+    INTERSECT
     SELECT idClient FROM Commande
     WHERE idCommande IN(
         SELECT idProduit FROM Produit
