@@ -79,6 +79,7 @@ GROUP BY idVilleResidence;
 SELECT identifiantDepartement, COUNT(identifiantVille) AS NBVILLE
 FROM Ville
 GROUP BY identifiantDepartement;
+/*renvoie (34,10)*/
 
 /*Pour chaque client, on indique le code du client ainsi que le nombre de commande passé*/
 SELECT idClient, COUNT(idCommande) AS NBCOMMANDES
