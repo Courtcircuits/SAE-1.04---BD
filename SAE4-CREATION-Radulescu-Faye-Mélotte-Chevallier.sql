@@ -16,7 +16,7 @@ CREATE TABLE CategorieProduit
 (identifiantCategorie NUMBER(5,0), nomCategorie VARCHAR(50),
 constraint pk_CategorieProduit PRIMARY KEY (identifiantCategorie),
 constraint nn_nom_CategorieProduit CHECK (nomCategorie IS NOT NULL),
-CONSTRAINT un_nom_CategorieProduit UNIQUE (nomCategorie);
+CONSTRAINT un_nom_CategorieProduit UNIQUE (nomCategorie));
 
 CREATE TABLE CategorieClient (
     identifiantCategorieClient NUMBER(5,0),
