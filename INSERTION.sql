@@ -118,6 +118,7 @@ INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, da
 INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (08, 'Hello', 'World', 0640440440, 'helloworld@gmail.com', '06/08/1991', 04, 04, 4);
 INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (09, 'Zemmour', 'Éric', 0666666666, 'ZemmourPresident.2022@gmail.com', '31/08/1958', 08, 02, 8);
 INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (10, 'Zemmour', 'Éric', 0666666660, 'Zemmourfrancais.benvoyons@gmail.com', '13/08/1958', 02, 08, 2);
+INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (11, 'Heim', 'Joe', 0789254863, 'Heim.Joe@gmail.com', '13/08/1988', 03, 11, 2);
 
 /*Commande*/
 INSERT INTO Commande(idCommande, dateCommande, dateLivraison, prixCommande, idVilleReception, idClient) VALUES(1, '23/1/2019', '27/1/2019', 99.99, 03, 01);
