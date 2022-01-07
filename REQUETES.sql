@@ -3,22 +3,17 @@ SELECT SUM(prixCommande) FROM Commande
 WHERE idClient=10;
 /*Retourne 46.98 */
 
-/*Renvoie tout les noms de fournisseur qui fournisse un produit*/
+
+/*Renvoie tout les noms de fournisseur qui fournisse un produit qui a un prix superieur a 50*/
+
 SELECT nomFournisseur
 FROM Fournisseur
 where identifiantFournisseur IN (SELECT identifiantFournisseur
-                                 FROM Fournir);
-/* Retourne 
-LeFilDarianne
-LaBelleTouche
-La Ré du Do
-fauré
-Tronc et Bonne
-Le DoRé
-Bet Hoven
-un bon Grieg et au liszt
-Basse inné 
-*/
+                                 FROM Fournir f
+                                 Join Produit p ON f.idProduit = p.idProduit
+                                 where prixProduit > 50);
+
+/* renvoie {LeFilsDarianne,Le Doré,LaBelleTouche,fauré,un bon grieg et au liszt, Basse inné , La ré du do}*/
                                  
 /*Récuperer l'id produit et l'identifiant de promotion pour les pourcentage de reduction superieur ou egal a 35*/
 SELECT idProduit, identifiantPromotion
