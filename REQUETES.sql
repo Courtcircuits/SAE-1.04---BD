@@ -120,9 +120,19 @@ WHERE identifiantDepartement IN(
 GROUP BY identifiantDepartement;
 /*renvoie (34,2)*/
 
-/*Pour chaque client, on indique le code du client ainsi que le nombre de commande passé*/
+/*Pour chaque client, on indique le code des clients habitant dans une ville en Hérault ainsi que le nombre de commande passé*/
 SELECT idClient, COUNT(idCommande) AS NBCOMMANDES
 FROM Commande 
+WHERE idClient IN(
+    SELECT idClient FROM Client
+    WHERE idVilleResidence IN(
+        SELECT identifiantVille FROM Ville
+        WHERE identifiantDepartement IN(
+            SELECT identifiantDepartement FROM Departement
+            WHERE nomDepartement='Hérault'
+        )
+    )
+)
 GROUP BY idClient;
 /*renvoie (1,2);(2,2);(4,1);(8,1);(3,1);(10,2);(9,1)*/
 
