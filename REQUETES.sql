@@ -95,11 +95,30 @@ GROUP BY idVilleResidence;
 
 /*renvoie (1,2);(11,1);(2,1);(4,2);(8,1);(10,1)(9,1)*/
 
-/*Pour chaque département (qui possède des villes), on indique l'identifiant du département ainsi que le nombre de ville du département.*/
+/*Pour chaque département se situant en Occitanie (qui possède des villes et dont les habitants de cette ont commandé un instrument dans la catégorie piano ou guitare), on indique l'identifiant du département ainsi que le nombre de ville du département.*/
 SELECT identifiantDepartement, COUNT(identifiantVille) AS NBVILLE
 FROM Ville
+WHERE identifiantDepartement IN(
+    SELECT identifiantDepartement FROM Departement
+    WHERE nomRegion='Occitanie'
+) AND identifiantVille IN(
+    SELECT idVilleResidence FROM Client
+    WHERE idClient IN (
+        SELECT idClient FROM Commande
+        WHERE idCommande IN(
+            SELECT idCommande FROM SeTrouver
+            WHERE idProduit IN(
+                SELECT idProduit FROM Produit
+                WHERE identifiantCategorie IN (
+                    SELECT identifiantCategorie FROM CategorieProduit
+                    WHERE nomCategorie='Piano' OR nomCategorie='Guitare'
+                )
+            )
+        )
+    )
+)
 GROUP BY identifiantDepartement;
-/*renvoie (34,10)*/
+/*renvoie (34,2)*/
 
 /*Pour chaque client, on indique le code du client ainsi que le nombre de commande passé*/
 SELECT idClient, COUNT(idCommande) AS NBCOMMANDES
