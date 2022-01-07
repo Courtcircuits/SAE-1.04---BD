@@ -80,11 +80,25 @@ WHERE idClient IN(
 );
 /*Retourne Bigard*/
 
-/*Pour chaque ville de résidence (qui possède des clients), on indique l'identifiant de la ville de résidence ainsi que le nombre de clients de la ville.*/
+/*Pour chaque ville de résidence (qui possède des clients qui sont professeur de musique ou musicien pro ou VIP ou bien qui ont reçu un produit dans une ville de l'Hérault), on indique l'identifiant de la ville de résidence ainsi que le nombre de clients de la ville.*/
 SELECT idVilleResidence, COUNT(idClient) AS NBCLIENT
 FROM Client
+WHERE idCategorieClient IN(
+    SELECT identifiantCategorieClient FROM CategorieClient
+    WHERE nomCategorieClient='VIP' OR nomCategorieClient='Professeur de musique' OR nomCategorieClient='Musicien professionel'
+) OR idClient IN (
+    SELECT DISTINCT idClient FROM Commande
+    WHERE idVilleReception IN(
+        SELECT identifiantVille FROM Ville
+        WHERE identifiantDepartement IN(
+            SELECT identifiantDepartement FROM Departement
+            WHERE nomDepartement='Hérault'
+        )
+    )
+)
 GROUP BY idVilleResidence;
-/*renvoie (1,2);(2,1);(4,2);(8,1);(3,1);(7,1);(10,1);(9,1)*/
+
+/*renvoie (1,2);(11,1);(2,1);(4,2);(8,1);(10,1)(9,1)*/
 
 /*Pour chaque département (qui possède des villes), on indique l'identifiant du département ainsi que le nombre de ville du département.*/
 SELECT identifiantDepartement, COUNT(identifiantVille) AS NBVILLE
