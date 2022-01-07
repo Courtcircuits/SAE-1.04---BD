@@ -38,12 +38,15 @@ WHERE idProduit IN (SELECT idProduit
 													WHERE nomCategorie = 'Batterie'));
 /* Retourne 1, 2, 10 */
                          
-/*Récupère toutes les infos sur les clients qui n'ont passé aucune commande*/
+/*Récupère toutes les infos sur les clients habitant dans le département d'id 34 qui n'ont passé aucune commande*/
 SELECT * FROM Client
 WHERE idClient IN(
     SELECT idClient FROM Client
     MINUS
     SELECT idClient FROM Commande
+) AND idVilleResidence IN (
+    SELECT identifiantVille FROM Ville
+    WHERE identifiantDepartement='34'
 );
 /*Retourne les infos sur les clients 5,6 & 7*/
 
