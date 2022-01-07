@@ -148,10 +148,14 @@ WHERE idClient IN(
 GROUP BY idClient;
 /*renvoie (1,2);(2,2);(4,1);(8,1);(3,1);(10,2);(9,1)*/
 
-/*Retourne le prix moyen des commandes */
+/*Retourne le prix moyen des commandes reçu dans le département 34 et passé par les clients 'DJ' */
 SELECT AVG(prixCommande) AS prixMoyen
-FROM Commande;
-/*41,167*/
+FROM Commande com
+JOIN Client cli ON com.idClient = cli.idClient
+JOIN CategorieClient catC ON catC.identifiantCategorieClient = cli.idCategorieClient
+JOIN Ville v ON v.identifiantVille = com.idVilleReception
+WHERE identifiantDepartement = 34 AND nomCategorieClient = 'DJ';
+/* Retourne 43 */
 
 /* Retourne le nombre de clients habitant dans chaque département */
 SELECT nomDepartement, COUNT(*) AS nbHabitants
