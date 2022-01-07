@@ -59,7 +59,7 @@ WHERE p.prixProduit > 100 AND s.idCommande IN ( SELECT idCommande FROM Commande
                                                                     WHERE idCategorieClient IN (SELECT identifiantCategorieClient FROM CategorieClient
                                                                                                 WHERE nomCategorieClient = 'VIP')
                                                                   )
-                                               );
+                                               )
 ORDER BY p.prixProduit DESC;
 /* Retourne (1,3) (2,2) (1,2) (2,8)*/
 
