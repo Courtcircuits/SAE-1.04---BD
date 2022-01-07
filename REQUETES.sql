@@ -46,13 +46,22 @@ WHERE idClient IN(
 );
 /*Retourne les infos sur les clients 5,6 & 7*/
 
-/*Renvoie l'idProduit et sa quantité des produits dont le prix est superieur a 100 du plus chère au moins chère */
-SELECT quantite , p.idProduit
+/*Renvoie l'idProduit et sa quantité des produits dont le prix est superieur a 100 du plus chère au moins chère et si il est commandé par un client VIP */
+SELECT s.quantite, s.idProduit
 FROM SeTrouver s
 JOIN Produit p ON p.idProduit=s.idProduit
-WHERE prixProduit > 100
-ORDER BY prixProduit DESC;
-/* Retourne (6,9),(1,5),(1,3),(2,2),(1,2),(3,1),(2,8),(7,7) */
+WHERE p.prixProduit > 100 AND s.idCommande IN(
+    SELECT idCommande FROM Commande
+    WHERE idClient IN(
+        SELECT idClient FROM Client
+        WHERE idCategorieClient IN(
+            SELECT identifiantCategorieClient FROM CategorieClient
+            WHERE nomCategorieClient = 'VIP'
+        )
+    )
+)
+ORDER BY p.prixProduit DESC;
+/* Retourne (1,3) (2,2) (1,2) (2,8)*/
 
 /*Récupère le nom des clients qui sont des VIP mais également qui ont acheté un instrument dans la catégorie guitare*/
 SELECT nomClient FROM Client
