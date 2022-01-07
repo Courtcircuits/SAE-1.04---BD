@@ -35,16 +35,16 @@ INSERT INTO CategorieProduit (identifiantCategorie, nomCategorie) VALUES (8, 'Ba
 INSERT INTO CategorieProduit (identifiantCategorie, nomCategorie) VALUES (9, 'Harpe');
 
 /*Fournisseur*/
-INSERT INTO Fournisseur VALUES (1, 'LeFilDarianne');
-INSERT INTO Fournisseur VALUES (2, 'LaBelleTouche');
-INSERT INTO Fournisseur VALUES (3, 'Basse inné');
-INSERT INTO Fournisseur VALUES (4, 'fauré');
-INSERT INTO Fournisseur VALUES (5, 'un bon Grieg et au liszt');
-INSERT INTO Fournisseur VALUES (6, 'Le DoRé');
-INSERT INTO Fournisseur VALUES (7, 'Satie bien');
-INSERT INTO Fournisseur VALUES (8, 'Bet Hoven');
-INSERT INTO Fournisseur VALUES (9, 'Tronc et Bonne');
-INSERT INTO Fournisseur VALUES (10, 'La Ré du Do');
+INSERT INTO Fournisseur (identifiantFournisseur, nomFournisseur) VALUES (1, 'LeFilDarianne');
+INSERT INTO Fournisseur (identifiantFournisseur, nomFournisseur) VALUES (2, 'LaBelleTouche');
+INSERT INTO Fournisseur (identifiantFournisseur, nomFournisseur) VALUES (3, 'Basse inné');
+INSERT INTO Fournisseur (identifiantFournisseur, nomFournisseur) VALUES (4, 'fauré');
+INSERT INTO Fournisseur (identifiantFournisseur, nomFournisseur) VALUES (5, 'un bon Grieg et au liszt');
+INSERT INTO Fournisseur (identifiantFournisseur, nomFournisseur) VALUES (6, 'Le DoRé');
+INSERT INTO Fournisseur (identifiantFournisseur, nomFournisseur) VALUES (7, 'Satie bien');
+INSERT INTO Fournisseur (identifiantFournisseur, nomFournisseur) VALUES (8, 'Bet Hoven');
+INSERT INTO Fournisseur (identifiantFournisseur, nomFournisseur) VALUES (9, 'Tronc et Bonne');
+INSERT INTO Fournisseur (identifiantFournisseur, nomFournisseur) VALUES (10, 'La Ré du Do');
 
 /*Ville*/
 INSERT INTO Ville (identifiantVille, nomVille, nombreHabitants, identifiantDepartement) VALUES (01, 'Sète', 91276, 34);
