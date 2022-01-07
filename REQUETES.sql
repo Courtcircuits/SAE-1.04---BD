@@ -1,10 +1,16 @@
-/*Récupère la somme des prix des commandes passées par le client 10*/
-SELECT SUM(prixCommande) FROM Commande 
-WHERE idClient=10;
-/*Retourne 46.98 */
+/*Récupère la somme des prix des commandes contenant le produit Gewa Pro Natura Silver 1/2 Maple et qui sont passées par les clients qui habitent dans la ville de Sète */
+SELECT sum(prixCommande) as PrixCommande
+FROM Commande C
+Join seTrouver T ON T.idCommande=C.idCommande
+Where T.idProduit IN (SELECT idProduit
+                      From Produit
+                      where libelle = 'Gewa Pro Natura Silver 1/2 Maple')
+AND C.idClient IN (SELECT idClient
+                   From Client C
+                   Join Ville V ON V.identifiantVille=C.idVilleNaissance
+                   Where nomVille = 'Sète') ;
 
-
-/*Renvoie tout les noms de fournisseur qui fournisse un produit qui a un prix superieur a 50*/
+/* retourne {99.9} */
 
 SELECT nomFournisseur
 FROM Fournisseur
