@@ -20,13 +20,16 @@ where identifiantFournisseur IN (SELECT identifiantFournisseur
                                  where prixProduit > 50);
 
 /* renvoie {LeFilsDarianne,Le Doré,LaBelleTouche,fauré,un bon grieg et au liszt, Basse inné , La ré du do}*/
-                                 
-/*Récuperer l'id produit et l'identifiant de promotion pour les pourcentage de reduction superieur ou egal a 35*/
-SELECT idProduit, identifiantPromotion
-FROM Reduire
-Where pourcentage >= 35
-Order by pourcentage;
-/* Retourne (3,2),(4,8),(8,5),(1,4) */
+
+/*Récuperer l'id produit et l'identifiant de promotion pour les pourcentage de reduction superieur ou egal a 35 et lorsque le nom de la promotion contient la lettre 'o' et que le prix du produit est inférieur a 150*/
+
+SELECT idProduit , R.identifiantPromotion
+FROM Reduire R
+Join Promotion P ON P.identifiantPromotion=R.identifiantPromotion 
+where pourcentage > 34 AND idProduit IN (SELECT idProduit
+                                         From Produit 
+                                         where prixProduit < 150)
+AND nomPromotion LIKE '%o%';
 
 /* Retourne les id distinctes des commandes qui contiennent des produits appartenant à la catégorie Batterie */
 SELECT DISTINCT idCommande 
