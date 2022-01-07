@@ -183,10 +183,18 @@ WHERE idClient IN(
 );
 /*Renvoie 11/08/02 & 13/08/58*/
 
-/*Retourne l'identifiant et le nom de des promotions ayant le pourcentage de réduction le plus bas */
-SELECT p.identifiantPromotion , nomPromotion
+/*Retourne toutes les infos de la réduction ayant le pourcentage de réduction le plus bas parmi les réductions réduisant le prix des Guitare */
+SELECT p.identifiantPromotion , p.nomPromotion
 FROM Promotion p
 JOIN Reduire r ON p.identifiantPromotion = r.identifiantPromotion
-WHERE pourcentage IN (SELECT MIN(pourcentage)
-			FROM Reduire);
-/*Retourne (7, Black Friday)*/
+WHERE pourcentage = (SELECT MIN(pourcentage)
+			FROM Reduire
+            WHERE idProduit IN(
+                SELECT idProduit FROM Produit
+                WHERE identifiantCategorie IN(
+                    SELECT identifiantCategorie FROM CategorieProduit
+                    WHERE nomCategorie='Guitare'
+                )
+            ))
+    ;
+/*Retourne (4, Anniversaire du Banger Shop, 15/03/22, 16/03/22)*/
