@@ -96,16 +96,16 @@ INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (7,5);
 INSERT INTO Fournir (idProduit, identifiantFournisseur) VALUES (8,3);
 
 /*Reduire*/
-INSERT INTO Reduire VALUES (4,0,10);
-INSERT INTO Reduire VALUES (4,1,50);
-INSERT INTO Reduire VALUES (1,0,30);
-INSERT INTO Reduire VALUES (1,1,15);
-INSERT INTO Reduire VALUES (2,1,25);
-INSERT INTO Reduire VALUES (2,3,35);
-INSERT INTO Reduire VALUES (5,8,42);
-INSERT INTO Reduire VALUES (7,3,5);
-INSERT INTO Reduire VALUES (9,9,22);
-INSERT INTO Reduire VALUES (8,4,37);
+INSERT INTO Reduire (identifiantPromotion, idProduit, pourcentage) VALUES (4,0,10);
+INSERT INTO Reduire (identifiantPromotion, idProduit, pourcentage) VALUES (4,1,50);
+INSERT INTO Reduire (identifiantPromotion, idProduit, pourcentage) VALUES (1,0,30);
+INSERT INTO Reduire (identifiantPromotion, idProduit, pourcentage) VALUES (1,1,15);
+INSERT INTO Reduire (identifiantPromotion, idProduit, pourcentage) VALUES (2,1,25);
+INSERT INTO Reduire (identifiantPromotion, idProduit, pourcentage) VALUES (2,3,35);
+INSERT INTO Reduire (identifiantPromotion, idProduit, pourcentage) VALUES (5,8,42);
+INSERT INTO Reduire (identifiantPromotion, idProduit, pourcentage) VALUES (7,3,5);
+INSERT INTO Reduire (identifiantPromotion, idProduit, pourcentage) VALUES (9,9,22);
+INSERT INTO Reduire (identifiantPromotion, idProduit, pourcentage) VALUES (8,4,37);
 
 /*Client*/
 INSERT INTO Client (idClient, nomClient, prenomClient, numeroTel, mailClient, dateDeNaissance, idVilleNaissance, idVilleResidence, idCategorieClient) VALUES (01, 'Bigard', 'Jean-Marie', 0669696969, 'jdefouraille@gmail.com', '17/05/1954', 03, 04, 8);
