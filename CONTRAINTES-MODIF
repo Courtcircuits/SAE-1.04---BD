@@ -1,2 +1,5 @@
+/*Ajout de la contrainte fk_jour_SeTrouver, l'attribut jour dans la table SeTrouver est une clef étrangère qui fait référence à la clef primaire jour dans la table Jour*/
 ALTER TABLE SeTrouver ADD CONSTRAINT fk_jour_SeTrouver FOREIGN KEY (jour) REFERENCES Jour(jour);
+
+/*Ajout de la contrainte nn_jour_SeTrouver qui fait en sorte que l'attribut jour dans la table SeTrouver ne peut pas être NULL*/
 ALTER TABLE SeTrouver ADD CONSTRAINT nn_jour_SeTrouver CHECK (jour IS NOT NULL);
