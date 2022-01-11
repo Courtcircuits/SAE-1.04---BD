@@ -1,0 +1,11 @@
+/*Jeu de données dans jour*/
+INSERT INTO Jour(jour) VALUES ('12/01/2021');
+INSERT INTO Jour(jour) VALUES ('13/01/2021');
+INSERT INTO Jour(jour) VALUES ('14/01/2021');
+INSERT INTO Jour(jour) VALUES ('15/01/2021');
+INSERT INTO Jour(jour) VALUES ('16/01/2021');
+INSERT INTO Jour(jour) VALUES ('17/01/2021');
+INSERT INTO Jour(jour) VALUES ('18/01/2021');
+INSERT INTO Jour(jour) VALUES ('19/01/2021');
+INSERT INTO Jour(jour) VALUES ('20/01/2021');
+INSERT INTO Jour(jour) VALUES ('21/01/2021');
