@@ -20,3 +20,15 @@ UPDATE Produit SET idFournisseurPrincipal=6 WHERE idProduit=5;
 UPDATE Produit SET idFournisseurPrincipal=8 WHERE idProduit=6;
 UPDATE Produit SET idFournisseurPrincipal=5 WHERE idProduit=7;
 UPDATE Produit SET idFournisseurPrincipal=3 WHERE idProduit=8;
+
+/* SeTrouver */
+UPDATE SeTrouver SET jour='12/01/2021' WHERE idCommande=1 and idProduit=3;
+UPDATE SeTrouver SET jour='13/01/2021' WHERE idCommande=1 and idProduit=2;-
+UPDATE SeTrouver SET jour='17/01/2021' WHERE idCommande=2 and idProduit=2;
+UPDATE SeTrouver SET jour='17/01/2021' WHERE idCommande=3 and idProduit=1;
+UPDATE SeTrouver SET jour='19/01/2021' WHERE idCommande=4 and idProduit=4;
+UPDATE SeTrouver SET jour='12/01/2021' WHERE idCommande=5 and idProduit=0;
+UPDATE SeTrouver SET jour='17/01/2021' WHERE idCommande=6 and idProduit=9;
+UPDATE SeTrouver SET jour='12/01/2021' WHERE idCommande=7 and idProduit=8;
+UPDATE SeTrouver SET jour='19/01/2021' WHERE idCommande=8 and idProduit=7;
+UPDATE SeTrouver SET jour='21/01/2021' WHERE idCommande=9 and idProduit=6;
