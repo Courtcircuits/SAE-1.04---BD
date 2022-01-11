@@ -23,7 +23,7 @@ UPDATE Produit SET idFournisseurPrincipal=3 WHERE idProduit=8;
 
 /* SeTrouver */
 UPDATE SeTrouver SET jour='12/01/2021' WHERE idCommande=1 and idProduit=3;
-UPDATE SeTrouver SET jour='13/01/2021' WHERE idCommande=1 and idProduit=2;-
+UPDATE SeTrouver SET jour='13/01/2021' WHERE idCommande=1 and idProduit=2;
 UPDATE SeTrouver SET jour='17/01/2021' WHERE idCommande=2 and idProduit=2;
 UPDATE SeTrouver SET jour='17/01/2021' WHERE idCommande=3 and idProduit=1;
 UPDATE SeTrouver SET jour='19/01/2021' WHERE idCommande=4 and idProduit=4;
