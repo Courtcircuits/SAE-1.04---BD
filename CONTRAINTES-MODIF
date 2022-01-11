@@ -1,4 +1,4 @@
-ALTER TABLE Produit ADD CONSTRAINT fk_idFournisseur_Produit FOREIGN KEY idFournisseurPrincipal REFERENCES Fournir(identifiantFournisseur);
+ALTER TABLE Produit ADD CONSTRAINT fk_idFournisseur_Produit FOREIGN KEY (idFournisseurPrincipal) REFERENCES Fournir(identifiantFournisseur);
 
 ALTER TABLE SeTrouver ADD CONSTRAINT fk_jour_SeTrouver FOREIGN KEY(jour) REFERENCES Jour(jour);
 
